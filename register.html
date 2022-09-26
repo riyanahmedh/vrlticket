@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       
+
+        .infocontainer{
+           
+            padding-left: 140px;
+            padding-right: 140px;
+            margin-top: -8px;
+            background-color:transparent;
+            
+        }
+        footer{
+            background-color:aquamarine;
+            padding-left: 100px;
+            height: 55px;
+        }
+            </style>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <script>
+    </script>
+    <section class="header">
+        <nav>
+            <a href="ind.html"><img src="bus-truning.gif"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="ind.html">HOME</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="tickets.html">BOOK TICKET</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>VRL Bus Tickets</h1>
+        </div>
+    </section>
+
+    <div class="infocontainer">
+        <h3>Ticket Reservation</h3><br>
+        <form>
+            <h5>Travel Information</h5>
+            <span>
+                <label class="bn">Bus-Name *</label>
+                <input id="bn" type="text">
+                <label class="date">Date</label>
+                <input id="date" type="date">
+                <label class="bt">Bus-type *</label>
+                <select id="bt">
+                    <option value="bt">Ordinary Buses</option>
+                    <option value="bt">Non AC Buses</option>
+                    <option value="bt">Mini Buses</option>
+                    <option value="bt">Super Luxury (Non-AC Seater)</option>
+                    <option value="bt">Volvo AC Buses</option>
+                    <option value="bt">Sleeper AC Buses</option>
+                    <option value="bt">Sleeper Buses</option>
+                    <option value="bt">Deluxe Buses</option>
+                    <option value="bt">Sleeper Cum Seater AC</option>
+                    <option value="bt">Double Decker Buses</option>
+                    <option value="bt">Mercedes buses</option>
+                    <option value="bt">Non-Mercedes buses</option>
+                    <option value="bt">Electric Buses</option>
+                    <option value="bt">Express Buses</option>
+                </select>
+            </span>
+            <br>
+            <br>
+            <span>
+                <label class="from">From*</label>
+                <input id="from" type="date">
+                <label class="to">To*</label>
+                <input id="to" type="date">
+                <label class="via">Via*</label>
+                <select id="via">
+                    <option value="via">place1</option>
+                    <option value="via">place2</option>
+                    <option value="via">place3</option>
+                </select>
+            </span>
+            <br>
+            <br>
+            <span>
+                <label class="pno">Mobile*</label>
+                <input id="pno" type="tel">
+            </span>
+            <br>
+            <h5>Fare Details</h5>
+            <span>
+                <label class="name">Name</label>
+                <input id="name" type="text">
+                <label class="age">Age</label>
+                <input id="age" type="number">
+                <label class="gender">Gender</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="gay">Not to say</option>
+                </select>
+            </span>
+            <h5>Terms and Conditions</h5>
+            <input type="checkbox" required> * I accept the Terms and Conditions
+            <br>
+            <br>
+            <input type="submit" onclick="run()" value="conform">
+            <br>
+        </form><br>
+    </div><br>
+    <div class="footer">
+
+        <footer>
+            <p>
+                <a href="www.navbus.com">Navbus.com</a>
+            </p>
+        </footer>
+</body>
+
+</html>
